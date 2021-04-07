@@ -1,8 +1,38 @@
-var frutas = [{nome: "Maçã", cor: "Vermelha"}, {nome: "Uva", cor: "Roxa"}];
-console.log(frutas);
-alert(frutas[1].nome);
+var d = new Date();
+//alert(d);
+//alert(d.getMonth());
+//alert(d.getMonth() + 1);
+//alert(d.getMinutes());
+alert(d.getDay());
+alert(d.getHours());
+
+/* Aula 3:
+for(var count = 0; count <= 5; count++){ - Loop For.
+    alert(count);
+}
+
+var count = 0;
+while(count <= 5){ - Loop While.
+    console.log(count);
+    alert(count); 
+    count++;
+}
+
+var idade = prompt("Qual sua idade: "); - Aparece uma mensagem (tipo o "alert()") com um espaço de Input.
+var idade = 18;
+if(idade >= 18){
+    alert("Maior de idade");
+}
+else{
+    alert("Menor de idade");
+}
+*/
 
 /* Aula 2:
+var frutas = [{nome: "Maçã", cor: "Vermelha"}, {nome: "Uva", cor: "Roxa"}]; - Cria lista de dicionários.
+console.log(frutas); - Exibe a lista.
+alert(frutas[1].nome); - Exibe o nome do primeiro valor.
+
 var fruta = {nome: "Maçã", cor: "Vermelha"}; - Cria um dicionário.
 console.log(fruta); - Mostra o conteúdo do dicionário.
 console.log(fruta.nome); - Mostra o nome declarado dentro do dicionário.
