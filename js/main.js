@@ -1,12 +1,36 @@
-var d = new Date();
-//alert(d);
-//alert(d.getMonth());
-//alert(d.getMonth() + 1);
-//alert(d.getMinutes());
-alert(d.getDay());
-alert(d.getHours());
+function soma(n1, n2) {
+    return n1 + n2;
+}
+
+function validarIdade(idade){
+    var validar;
+    if(idade >= 18){
+        validar = true;
+    }
+    else{
+        validar = false;
+    }
+    return validar;
+}
+
+var idade = prompt("Qual sua idade: ");
+console.log(validarIdade(idade));
+
+//alert(soma(5, 10));
 
 /* Aula 3:
+function setReplace(frase, nome, novo_nome){ - Função para usar o replace();
+    return frase.replace(nome, novo_nome);
+}
+alert(setReplace("Vai Alemanha", "Alemanha", "Brasil")); - alert() para mostrar a função setReplace() anterior.
+var d = new Date(); - Declara a classe Date();
+alert(d); - Mostra a data e hora atual.
+alert(d.getMonth()); - Mostra o mês atual.
+alert(d.getMonth() + 1); - Mostra o mês atual corretamente.
+alert(d.getMinutes()); - Mostra os minutos.
+alert(d.getDay()); - Mostra o número do dia atual (Domingo - 0, Segunda - 1...)
+alert(d.getHours()); - Mostra a hora autal.
+
 for(var count = 0; count <= 5; count++){ - Loop For.
     alert(count);
 }
