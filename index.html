@@ -4,12 +4,31 @@
     <title>Minha página</title>
     <script type="text/javascript" src="js/main.js"></script> <!--Outro jeito de colcoar JS em HTML-->
 </head>
-<body>
+<body onload="load()">
     <!-- Um jeito de colocar JS em HTML:
     <script>
         alert("Meu primeiro JS");
     </script>
     -->
-    <h1>Minha página</h1>
+    <button type="button" onclick="clicou()">Clique aqui</button>
+    <!-- Exemplos de trocar o texto quando passar ou clicar com o mouse:
+    <h3 id="agradecimento"></h3>
+    <p id="agradecimento" onclick="redirecionar()"></p>
+    <p id="mouse_move" onmouseover="trocar()" onmouseout="voltar()">Passe o mouse aqui!</p>
+    <p id="mouse_move" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui!</p>    
+    <p id="mouse_move2" onmouseover="trocar()" onmouseout="voltar()">Passe o mouse aqui!</p>
+    <p id="mouse_move2" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui!</p>
+    --> 
+
+    <p onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui!</p>    
+    <p onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui!</p>
+    <p onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui!</p>
+    
+    <select onchange="change(this)">
+        <option value="1">Valor um</option>
+        <option value="2">Valor dois</option>
+        <option value="3">Valor três</option>
+    </select>
+
 </body>
 </html>
